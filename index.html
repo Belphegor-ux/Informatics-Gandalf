@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- History Website Template -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>History Hub</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Added "Check Out My JavaScript" button -->
+        <div style="text-align: center; margin: 20px;">
+            <a href="snake.html" class="btn1" style="display: inline-block; padding: 10px 20px; background-color: #c3a374; color: #ffffff; text-decoration: none; border-radius: 5px;">
+                Check Out My JavaScript
+            </a>
+        </div>
+</head>
+<body>
+    <div id="header">
+        <div class="wrapper clearfix">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+            </div>
+            <ul id="navigation">
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="eras.html">Historical Eras</a></li>
+                <li><a href="figures.html">Key Figures</a></li>
+                <li><a href="timeline.html">Events Timeline</a></li>
+                <li><a href="resources.html">Educational Resources</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="contents">
+        <div id="adbox">
+            <div class="wrapper clearfix">
+                <div class="info">
+                    <h1 style="color: white;">Welcome to History Hub</h1>
+                    <p id="welc" style="color: white;"></p>
+                </div>
+            </div>
+            <div class="highlight">
+                <h2 style="color: white;">Discover, Learn, and Engage with History</h2>
+            </div>
+        </div>
+        <div class="body clearfix">
+            <div class="click-here">
+                <h1 style="color: white;">Featured Historical Event</h1>
+                <a href="index.html" class="btn2">Learn More!</a>
+            </div>
+            <p style="font-size:12px; color: white;">
+                Join us on a journey through time. Our featured event of the month covers the fall of the Roman Empire. Understand the causes, key figures, and aftermath of this pivotal moment in history.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <ul id="featured" class="wrapper clearfix">
+            <li>
+                <img src="images/ancient.jpg" alt="Img" height="204" width="220">
+                <h3 style="color: white;"><a href="eras.html#ancient">Ancient History</a></h3>
+                <p style="color: white;">Explore ancient civilizations like Egypt, Mesopotamia, Greece, and Rome.</p>
+            </li>
+            <li>
+                <img src="images/medieval.jpg" alt="Img" height="204" width="220">
+                <h3 style="color: white;"><a href="eras.html#medieval">Medieval History</a></h3>
+                <p style="color: white;">Dive into the Middle Ages, the Byzantine Empire, and the Crusades.</p>
+            </li>
+            <li>
+                <img src="images/modern.jpg" alt="Img" height="204" width="220">
+                <h3 style="color: white;"><a href="eras.html#modern">Modern History</a></h3>
+                <p style="color: white;">Learn about the Renaissance, Industrial Revolution, and World Wars.</p>
+            </li>
+            <li>
+                <img src="images/contemporary.jpg" alt="Img" height="204" width="220">
+                <h3 style="color: white;"><a href="eras.html#contemporary">Contemporary History</a></h3>
+                <p style="color: white;">Understand recent events, the Cold War, and the Digital Age.</p>
+            </li>
+        </ul>
+    </div>
+    <!-- Added "Check Out My JavaScript" button -->
+    <div style="text-align: center; margin: 20px;">
+        <a href="snake.html" class="btn1" style="display: inline-block; padding: 10px 20px; background-color: #c3a374; color: #ffffff; text-decoration: none; border-radius: 5px;">
+            Check Out My JavaScript
+        </a>
+    </div>
+    <script>
+        let text;
+        let guest = prompt("Welcome to my very own corner in the web!\nwhat is thy name?", "Please input your name");
+        if (guest == null || guest == "")
+        { text = "Hello there! Welcome to my page!"; }
+        else if (guest.toLowerCase() === "ozaydin") {
+            text = "Hello Professor Ozaydin! Welcome to my page!"; }
+        else if (guest.toLowerCase() === "fatih") {
+            text = "Hello Professor Fatih! Welcome to my page!"; }
+        else if (guest.toLowerCase() === "fatih ozaydin") {
+            text = "Hello Professor Fatih! Welcome to my page!"; }
+        else if (guest.toLowerCase() === "ozaydin fatih") {
+            text = "Hello Professor Ozaydin! Welcome to my page!"; }
+        else
+        { text = "Hello " + guest + "! Welcome to my page!"; }
+        document.getElementById("welc").innerHTML = text;
+    </script>
+</body>
+</html>
